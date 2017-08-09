@@ -10,6 +10,14 @@ html{
   background-attachment: fixed;
 }
 
+#header-flex{
+  display: inline-flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 20px;
+}
+
 .header-styles{
   padding: 20px;
   font-family: "Verdana", sans-serif;
@@ -23,6 +31,7 @@ html{
 #page-flex-container{
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
   justify-content: space-evenly;
 }
 
@@ -33,16 +42,22 @@ html{
 
 #country-list-flex-container{
   background-color: rgba(255, 255, 255, 0.5);
-  height: 50px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Verdana", sans-serif;
 }
 
 #region-filter{
-  margin: 0px 10px;
-  width: 50px;
+  margin: 0px 10px 0px 22px;
+  width: 190px;
 }
 
 #sub-region-filter{
   margin: 0px 10px;
+  width: 190px;
 }
 
 #country-select{
@@ -60,6 +75,32 @@ button{
   text-align: center;
   text-decoration: none;
   font-size: 12px;
+  cursor: pointer;
+  transition: all .8s ease-in-out;
+  box-shadow: 5px 5px 5px grey;
+}
+
+button:hover{
+  transform: scale(1.1);
+  background-color: #689df2;
+  box-shadow: 10px 10px 10px grey;
+
+}
+
+ul{
+  padding: 30px;
+}
+
+li{
+  list-style: none;
+  line-height: 30px;
+}
+
+footer{
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
 }
 
 /*.country-select{
