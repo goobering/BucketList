@@ -1,6 +1,11 @@
 var countries, filteredCountries, regions, subRegions;
 var selectedCountries = [];
 
+var Country = require('./models/country');
+
+// var BucketQuery = require('../db/bucketQuery');
+// var query = new BucketQuery();
+
 var app = function(){
     var url = 'https://restcountries.eu/rest/v2/all';
     makeRequest(url, requestComplete);
@@ -122,10 +127,26 @@ var onSubmitCountriesClick = function(){
         var country = _.find(countries, {name: value});
         selectedCountries.push(country);
     });
-    debugger;
+    
     selectedCountries.forEach(function(selectedCountry){
-        //PUSH TO DB
+        var jsonString = JSON.stringify(selectedCountry);
+        makePostRequest('http://localhost:3000/', onPostComplete, jsonString)
+
+        // var newCountry = new Country({name: selectedCountry.name, capital: selectedCountry.capital, population: selectedCountry.population});
+        // query.add(newCountry);
     })
 };
+
+var onPostComplete = function(results){
+
+};
+
+var makePostRequest = function(url, callback, payload){
+    var request = new XMLHttpRequest();
+    request.open('POST', url);
+    request.setRequestHeader('Content-type', 'application/json');
+    request.addEventListener('load', callback);
+    request.send(payload);
+  }
 
 window.addEventListener('load', app);

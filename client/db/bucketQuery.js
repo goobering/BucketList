@@ -27,4 +27,3 @@ BucketQuery.prototype = {
 }
 
 module.exports = BucketQuery;
-
