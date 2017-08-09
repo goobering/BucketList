@@ -6,12 +6,8 @@
 html{
   background-image: url("world-map.gif");
   background-repeat: no-repeat;
-  background-size: stretch;
-}
-
-#flex-container{
-  display: flex;
-  flex-direction: row;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .header-styles{
@@ -24,28 +20,37 @@ html{
   width: 40px;
 }
 
-#main-header{
-  
+#page-flex-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
-#sub-heading{
-
+#country-select-flex-container{
+  display: flex;
+  justify-content: flex-start;
 }
 
-#continent{
-  margin: 0px 15px;
+#country-list-flex-container{
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 50px;
 }
 
-#region{
-  margin: 0px 15px;
+#region-filter{
+  margin: 0px 10px;
+  width: 50px;
 }
 
-#country{
-  margin: 0px 15px;
+#sub-region-filter{
+  margin: 0px 10px;
+}
+
+#country-select{
+  margin: 0px 10px;
 }
 
 button{
-  margin: 0px 15px;
+  margin: 0px 10px 0px 10px;
   border-radius: 15px;
   border: none;
   background-color: #4CAF50;

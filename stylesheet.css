@@ -1,0 +1,62 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  background-image: url("./world-map.gif");
+  background-repeat: no-repeat;
+  background-size: stretch;
+}
+
+#flex-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.header-styles{
+  padding: 20px;
+  font-family: "Verdana", sans-serif;
+}
+
+.spinning-world{
+  height: 40px;
+  width: 40px;
+}
+
+#main-header{
+  
+}
+
+#sub-heading{
+
+}
+
+#continent{
+  margin: 0px 15px;
+}
+
+#region{
+  margin: 0px 15px;
+}
+
+#country{
+  margin: 0px 15px;
+}
+
+button{
+  margin: 0px 15px;
+  border-radius: 15px;
+  border: none;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.country-select{
+  font-size: 9px;
+}
