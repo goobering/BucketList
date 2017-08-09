@@ -2,25 +2,55 @@
 <html>
   <head>
     <title>Bucket List</title>
+    <link rel="shortcut icon" type="image/png" href="earth-spinning-rotating-animation-25.gif">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <script src='bundle.js'></script>
     <script src='https://cdn.jsdelivr.net/lodash/4.17.4/lodash.js'></script>
   </head>
   <body>
-    <h1 id="main-header" class="header-styles">Our Wee Bucketlist <img class="spinning-world" src="earth-spinning-rotating-animation-25.gif">
-    </h1>
-    <h3 id="sub-heading" class="header-styles">So many countries to visit...not enough money!</h3>
-    <div id="flex-container">
-    <select id="region-filter" class="country-select">
-    </select>
+  <div id="header-flex">
+      <h1 id="main-header" class="header-styles">Our Wee Bucketlist <img class="spinning-world" src="earth-spinning-rotating-animation-25.gif">
+      </h1>
 
-    <select id="sub-region-filter" class="country-select">
-    </select>
+      <h4 id="sub-heading" class="header-styles">Too many countries...not enough money!!!!</h4>
+  </div>
+    <div id="page-flex-container">
+    
+      <div id="country-select-flex-container">
+        <select id="region-filter" class="country-select">
+          <option disabled selected value>Select a continent...</option>
+        </select>
 
-    <select multiple id="country-select" class="country-select">
-    </select>
+        <select id="sub-region-filter" class="country-select">
+          <option disabled selected value>Select a region...</option>
+        </select>
 
-    <button id="submit-countries" type="button">Add To Bucketlist</button>
+        <select multiple id="country-select" class="country-select"></select>
+
+        <button>Add To Bucketlist</button>
+      </div>
+
+      <div id="country-list-flex-container">
+        <ul id="bucket-list-list">
+          <li>Name: Scotland</li>
+          <li>Population: 99,999,999</li>
+          <li>GLASGOW!</li>
+          <hr>
+          <li>Name: Spain</li>
+          <li>Population: 99,999,999</li>
+          <li>Capital: Madrid</li>
+          <hr>
+          <li>Name: Belgium</li>
+          <li>Population: 99,999,999</li>
+          <li>Capital: Brussels</li>
+          <hr>
+          <li>Name: Egypt</li>
+          <li>Population: 99,999,999</li>
+          <li>Capital: Cairo</li>
+        </ul>
+      </div>
+
     </div>
   </body>
+  <footer>Davie&copy Daleo&copy Jia&copy</footer>
 </html>

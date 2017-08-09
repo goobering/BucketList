@@ -6,12 +6,16 @@
 html{
   background-image: url("world-map.gif");
   background-repeat: no-repeat;
-  background-size: stretch;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-#flex-container{
-  display: flex;
-  flex-direction: row;
+#header-flex{
+  display: inline-flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 20px;
 }
 
 .header-styles{
@@ -24,28 +28,44 @@ html{
   width: 40px;
 }
 
-#main-header{
-  
+#page-flex-container{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
 }
 
-#sub-heading{
-
+#country-select-flex-container{
+  display: flex;
+  justify-content: flex-start;
 }
 
-#continent{
-  margin: 0px 15px;
+#country-list-flex-container{
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Verdana", sans-serif;
 }
 
-#region{
-  margin: 0px 15px;
+#region-filter{
+  margin: 0px 10px 0px 22px;
+  width: 190px;
 }
 
-#country{
-  margin: 0px 15px;
+#sub-region-filter{
+  margin: 0px 10px;
+  width: 190px;
+}
+
+#country-select{
+  margin: 0px 10px;
 }
 
 button{
-  margin: 0px 15px;
+  margin: 0px 10px 0px 10px;
   border-radius: 15px;
   border: none;
   background-color: #4CAF50;
@@ -55,6 +75,32 @@ button{
   text-align: center;
   text-decoration: none;
   font-size: 12px;
+  cursor: pointer;
+  transition: all .8s ease-in-out;
+  box-shadow: 5px 5px 5px grey;
+}
+
+button:hover{
+  transform: scale(1.1);
+  background-color: #689df2;
+  box-shadow: 10px 10px 10px grey;
+
+}
+
+ul{
+  padding: 30px;
+}
+
+li{
+  list-style: none;
+  line-height: 30px;
+}
+
+footer{
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
 }
 
 /*.country-select{
