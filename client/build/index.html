@@ -4,30 +4,31 @@
     <title>Bucket List</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <script src='bundle.js'></script>
+    <script src='https://cdn.jsdelivr.net/lodash/4.17.4/lodash.js'></script>
   </head>
   <body>
     <h1 id="main-header" class="header-styles">Our Wee Bucketlist <img class="spinning-world" src="earth-spinning-rotating-animation-25.gif">
     </h1>
     <h3 id="sub-heading" class="header-styles">So many countries to visit...not enough money!</h3>
     <div id="flex-container">
-    <select id="continent" class="country-select">
-      <option disabled selected value>Select a continent...</option>
+    <select id="region-filter" class="country-select">
+      <!-- <option disabled selected value>Select a continent...</option>
       <option value="continent">Asia</option>
       <option value="continent">North America</option>
-      <option value="continent">Africa</option>
+      <option value="continent">Africa</option> -->
     </select>
 
-    <select id="region" class="country-select">
-      <option disabled selected value>Select a region...</option>
+    <select id="sub-region-filter" class="country-select">
+      <!-- <option disabled selected value>Select a region...</option>
       <option value="region">North East England</option>
-      <option value="region">North East England</option>
+      <option value="region">North East England</option> -->
     </select>
 
-    <select multiple id="country" class="country-select">
-      <option value="scotland">Scotland</option>
+    <select multiple id="country-select" class="country-select">
+      <!-- <option value="scotland">Scotland</option>
       <option value="netherland">Netherland</option>
       <option value="thailand">Thailand</option>
-      <option value="ireland">Ireland</option>
+      <option value="ireland">Ireland</option> -->
     </select>
 
     <button type="button">Add To Bucketlist</button>

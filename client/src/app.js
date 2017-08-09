@@ -11,7 +11,7 @@ var app = function(){
     subRegionSelect.onchange = onSubRegionChanged;
 
     var countrySelect = document.querySelector('#country-select');
-    countrySelect.onchange = onCountryChanged;
+    // countrySelect.onchange = onCountryChanged;
 }
 
 var makeRequest = function(url, callback){
@@ -32,7 +32,7 @@ var requestComplete = function(){
 };
 
 var populateRegions = function(){
-    var regionSelect = document.querySelector('#GETNAMEFROMJI');
+    var regionSelect = document.querySelector('#region-filter');
     regionSelect.innerHTML = '';
     regions = new Set(_.map(countries, 'region'));
     regions.add('All');
